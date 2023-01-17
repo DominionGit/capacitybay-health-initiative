@@ -12,9 +12,9 @@
 ** Colors **
 primary color > #398c2b(header, buttons)
 secondary colors;
-1. #dd3333 (section1(homepage) color, buttons, hover color)
+1. #bbdc00 (section1(homepage) color, buttons, hover color)
 2. #222d3f (footer)
-3. #ffffff (section39(homepage) color)
+3. #ffffff (section3(homepage) color)
 4. #dd3333 (support us button(header))
 5. #d0dce0 (section2(hompage) color)
 

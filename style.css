@@ -8,7 +8,10 @@
 }
 
 :root{
-    --color-primary: black;
+    --color-primary: #398c2b;
+    --color-section1-4: #ffffff;
+    --color-section2: #bbdc00;
+    --color-section3: #d0dce0; 
 }
 
 h1{

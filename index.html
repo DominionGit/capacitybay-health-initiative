@@ -7,34 +7,39 @@
     <title>CapacityBay Health Initiative</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo/cbhi_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
        <nav>
         <img src="logo/cbhi_mainlogo.png" alt="" class="nav-logo">
-        <div>
-            <a href="">HOME</a>
-            <a href="">ABOUT US</a>
+        <div id="myDIV" class="header-content header-content1">
+            <a href="#" class="nav-btn active">HOME</a>
+            <a href="#" class="nav-btn">ABOUT US</a>
+
             <div class="dropdown">
-                <a href="" class="dropbtn">WHAT WE DO</a>
+                <a href="" class="dropbtn nav-btn">WHAT WE DO <i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropdown-content">
                   <a href="#">ACTION TO IMPROVE HEALTH LITERACY</a>
                   <a href="#">NIGERIA'S MEDICAL MISSION & VOLUNTEERISM</a>
                   <a href="#">MEDICAL FINANCIAL ASSISTANCE PROGRAM</a>
                 </div>
             </div>
+
             <div class="dropdown">
-                <a href="" class="dropbtn">GET INVOLVED</a>
+                <a href="" class="dropbtn nav-btn">GET INVOLVED <i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropdown-content">
                   <a href="#">SUPPORT US</a>
                   <a href="#">SIGN UP</a>
                 </div>
             </div>
-            <a href="">CONTACT US</a>
+
+            <a href="" class="nav-btn">CONTACT US</a>
         </div>
-        <div>
+
+        <div class="header-content header-content2">
             <div class="dropdown">
-                <a href="#" class="dropbtn">GET INVOLVED</a>
+                <a href="#" class="dropbtn nav-btn health-btn touch-btn">CORONAVIRUS <i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropdown-content">
                   <a href="#">NCDC REPORT</a>
                   <a href="#">COVID-19 REPORT</a>
@@ -43,7 +48,8 @@
                   <a href="#">WHO</a>
                 </div>
             </div>
-            <a href="">SUPPORT US</a>
+
+            <a href="" class="nav-btn support-btn touch-btn">SUPPORT US</a>
         </div>
        </nav> 
     </header>

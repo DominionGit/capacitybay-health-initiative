@@ -171,6 +171,7 @@ nav .header-content2 {
     transform: scale(1.1);
     animation: name duration timing-function delay iteration-count direction fill-mode;
     
+    
 }
 @keyframes scaleUp {
     0%{
@@ -199,6 +200,7 @@ nav .header-content2 {
     /* gap: 30px; */
     padding: 10px;
     animation: carouselText 1s ease-in-out;
+    
 
 }
 @keyframes carouselText {
@@ -225,4 +227,61 @@ nav .header-content2 {
     color: var(--color-section1-4);
     text-align: center;
     margin-top: 10px;
+}
+
+/* SECTION 2 */
+
+.section2{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.section2 .section2-text{
+    padding-top: 20px;
+}
+.section2 .section2-text h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.section2 .section2-text p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section2 .section2-display{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.section2 .section2-display .section2-links{
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.section2 .section2-display .section2-links a{
+    /* width: 50%; */
+    padding: 1.1em;
+    text-decoration: none;
+    color: var(--color-section1-4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section2 .section2-display .section2-links h1{
+    text-align: center;
+    color: var(--color-primary);
+}
+.section2 .section2-display .section2-links .a1{
+    background-color: var(--color-primary);
+}
+.section2 .section2-display .section2-links .a2{
+    background-color: var(--color-section2);
+}
+.section2 .section2-display .section2-links .a3{
+    background-color: #dc5f00;
+}
+.section2 .section2-vision{
+    
 }

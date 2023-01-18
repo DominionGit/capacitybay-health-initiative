@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapacityBay Health Initiative</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="logo/cbhi_favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- AOS for animation(CSS) -->
+        <!-- <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css"> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <!-- AOS for animation(JS) -->
+        <!-- <script src="../../assets/vendor/aos/dist/aos.js"></script> -->
+        
 </head>
+
 <body>
     <!-- HEADER SECTION -->
     <header>
-       <nav>
-        <img src="logo/cbhi_mainlogo.png" alt="" class="nav-logo">
-        <div id="myDIV" class="header-content header-content1">
-            <a href="#" class="nav-btn active">HOME</a>
-            <a href="#" class="nav-btn">ABOUT US</a>
+        <nav>
+            <img src="logo/cbhi_mainlogo.png" alt="" class="nav-logo">
+            <div id="myDIV" class="header-content header-content1">
+                <a href="#" class="nav-btn active">HOME</a>
+                <a href="#" class="nav-btn">ABOUT US</a>
 
-            <div class="dropdown">
-                <a href="" class="dropbtn nav-btn">WHAT WE DO <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                  <a href="#">ACTION TO IMPROVE HEALTH LITERACY</a>
-                  <a href="#">NIGERIA'S MEDICAL MISSION & VOLUNTEERISM</a>
-                  <a href="#">MEDICAL FINANCIAL ASSISTANCE PROGRAM</a>
+                <div class="dropdown">
+                    <a href="" class="dropbtn nav-btn">WHAT WE DO <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">ACTION TO IMPROVE HEALTH LITERACY</a>
+                        <a href="#">NIGERIA'S MEDICAL MISSION & VOLUNTEERISM</a>
+                        <a href="#">MEDICAL FINANCIAL ASSISTANCE PROGRAM</a>
+                    </div>
                 </div>
+
+                <div class="dropdown">
+                    <a href="" class="dropbtn nav-btn">GET INVOLVED <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">SUPPORT US</a>
+                        <a href="#">SIGN UP</a>
+                    </div>
+                </div>
+
+                <a href="" class="nav-btn">CONTACT US</a>
             </div>
 
-            <div class="dropdown">
-                <a href="" class="dropbtn nav-btn">GET INVOLVED <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                  <a href="#">SUPPORT US</a>
-                  <a href="#">SIGN UP</a>
+            <div class="header-content header-content2">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn nav-btn health-btn touch-btn">CORONAVIRUS <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">NCDC REPORT</a>
+                        <a href="#">COVID-19 REPORT</a>
+                        <a href="#">VIRUS MAPS</a>
+                        <a href="#">GUIDELINES</a>
+                        <a href="#">WHO</a>
+                    </div>
                 </div>
+
+                <a href="" class="nav-btn support-btn touch-btn">SUPPORT US</a>
             </div>
-
-            <a href="" class="nav-btn">CONTACT US</a>
-        </div>
-
-        <div class="header-content header-content2">
-            <div class="dropdown">
-                <a href="#" class="dropbtn nav-btn health-btn touch-btn">CORONAVIRUS <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                  <a href="#">NCDC REPORT</a>
-                  <a href="#">COVID-19 REPORT</a>
-                  <a href="#">VIRUS MAPS</a>
-                  <a href="#">GUIDELINES</a>
-                  <a href="#">WHO</a>
-                </div>
-            </div>
-
-            <a href="" class="nav-btn support-btn touch-btn">SUPPORT US</a>
-        </div>
-       </nav> 
+        </nav>
     </header>
 
     <!-- SECTION 1 >>> USING BOOTSTRAP CAROUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner carousel-div">
-          <div class="carousel-item active img-carousel">
-            <img src="images/HomePage/slider-1.png" class="d-block w-100 " alt="...">
-            <div class="info-carousel">
-                <span class="bold-text">A collective action plan</span> 
-                <h5>to improve health in communities in nigeria, with a focus to keeping people healthy</h5>
-                <a href="#">Learn More</a>
+            <div class="carousel-item active img-carousel">
+                <img src="images/HomePage/slider-1.png" class="d-block w-100 " alt="...">
+                <div class="info-carousel">
+                    <span class="bold-text">A collective action plan</span>
+                    <h5>to improve health in communities in nigeria, with a focus to keeping people healthy</h5>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item img-carousel">
+                <img src="images/HomePage/slider-2.png" class="d-block w-100 " alt="...">
+                <div class="info-carousel">
+                    <span class="bold-text">A commitment</span>
+                    <h5>to increasing the number of nigerians who are healthy at every stage of life</h5>
+                    <a href="#">Discover</a>
+                </div>
+            </div>
+            <div class="carousel-item img-carousel">
+                <img src="images/HomePage/together.png" class="d-block w-100 " alt="...">
+                <div class="info-carousel">
+                    <span class="bold-text">Working together to improve health and quality of life.</span>
+                    <h5>For individuals,families and communities by moving the nation from a focus on sickness and
+                        disease to one based on prevention and wellness.</h5>
+                    <a href="#">Discover</a>
+                </div>
             </div>
         </div>
-          <div class="carousel-item img-carousel">
-            <img src="images/HomePage/slider-2.png" class="d-block w-100 " alt="...">
-            <div class="info-carousel">
-                <span class="bold-text">A commitment</span> 
-                <h5>to increasing the number of nigerians who are healthy at every stage of life</h5> 
-                <a href="#">Discover</a>
-            </div>
-          </div>
-          <div class="carousel-item img-carousel">
-            <img src="images/HomePage/together.png" class="d-block w-100 " alt="...">
-            <div class="info-carousel">
-                <span class="bold-text">Working together to improve health and quality of life.</span> 
-                <h5>For individuals,families and communities by moving the nation from a focus on sickness and disease to one based on prevention and wellness.</h5>
-                <a href="#">Discover</a>
-            </div>
-          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+   <section class="section2">
+    <div class="section2-text">
+        <h1>CAPACITYBAY HEALTH INITIATIVE.</h1>
+        <p>A collective action plan to improve health in accordance with the humanitarian principles in the delivery of health care in rural Nigerian communities</p>
+    </div><br><br>
+    <div class="section2-display">
+        <iframe width="500" height="325"
+        src="https://www.youtube.com/embed/mOV1aBVYKGA?feature=oembed?controls=1" >
+        </iframe>
+        <div class="section2-links" data-aos="fade-up">
+            <h1 >Coronavirus</h1><br>
+            <a href="#" class="a1">World Realtime Virus Map</a><br>
+            <a href="#" class="a2">Covid-19</a><br>
+            <a href="#" class="a3">Guidelines</a><br>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </div><br>
+    <div class="section2-description">
+        <p>CapacityBay Health Initiative (CBHI) is a not-for-profit healthcare and humanitarian relief agency which focuses on and specializes in medical and emergency relief services in rural communities. CBHI was founded in late 2017 in Nigeria as a healthcare and humanitarian division of CapacityBay Inc based in the United States</p><br>
+        <p>As a healthcare and humanitarian relief agency, CBHI offers primary and community health care support to vulnerable and underprivileged individuals and families in rural communities in Nigeria, using a variety of means and approaches.</p><br>
+        <p>CBHI was birthed from the realization that most vulnerable and underprivileged individuals, families and communities throughout Nigeria (a nation of about 200 million people) lack access to basic health care due to several factors which include but not limited to financial constraints and poor healthcare system resources.</p><br>
+    </div>
+    <div class="section2-vision">
+        <h4>Our Vision</h4><br>
+        <p>The vision of CBHI is to provide intervention strategies, and support to the administration of preventive health care services in Nigeria’s underprivileged and rural communities, allowing vulnerable and poor individuals and families to achieve access to healthcare services.  To attain this, CBHI is taking leadership and resource mobilization role in addressing the social and economic determinants to health care as they impact individuals, families and communities.</p><br>
+        <a href="">Join Us</a>
+    </div>
+    
+   </section>
+
 
 
     <script src="app.js"></script>
-    
+    <!-- AOS JS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 0, 
+            duration: 1000,
+            easing: 'ease', 
+            once: false
+        });
+    </script>
+
 </body>
+
 </html>

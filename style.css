@@ -203,10 +203,10 @@ nav .header-content2 {
 }
 @keyframes carouselText {
     0%{
-        transform: translateY(-100%)
+        transform: translateX(-100%)
     }
     100%{
-        transform: translateY(20%);
+        transform: translateX(0%);
     }
 }
 .carousel .carousel-div .info-carousel h5{

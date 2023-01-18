@@ -164,6 +164,8 @@ nav .header-content2 {
     color: var(--color-section2);
     border-bottom: 2px solid var(--color-primary);
 }
+
+/* CAROUSEL STYLING */
 .carousel-inner .img-carousel{
     animation: scaleUp 1.5s 0.5s ease-in-out;
     transform: scale(1.1);
@@ -177,4 +179,50 @@ nav .header-content2 {
     100%{
         transform: scale(1.1);
     }
+}
+
+.carousel .carousel-div{
+    position: relative;
+}
+.carousel .carousel-div .info-carousel{
+    background-color: rgba(17, 15, 15, 0.4);
+    width: 60%;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 30px; */
+    padding: 10px;
+    animation: carouselText 1s ease-in-out;
+
+}
+@keyframes carouselText {
+    0%{
+        transform: translateY(-100%)
+    }
+    100%{
+        transform: translateY(20%);
+    }
+}
+.carousel .carousel-div .info-carousel h5{
+    font-size: 20px;
+}
+.carousel .carousel-div .info-carousel span{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel .carousel-div .info-carousel a{
+    width: 30%;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--color-primary);
+    color: var(--color-section1-4);
+    text-align: center;
+    margin-top: 10px;
 }

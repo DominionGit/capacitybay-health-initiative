@@ -393,6 +393,7 @@ nav .header-content2 {
 .section4{
     width: 100%;
     background-color: var(--color-section3);
+    padding-bottom: 40px;
 }
 .section4 .section4-container{
     width: 90%;
@@ -421,4 +422,49 @@ nav .header-content2 {
 /* .section4 .section4-container .right-side{
     border-bottom: none;
 } */
+
+/* SECTION 5 */
+.section5{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+}
+.section5 .section5-slide{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section5 .section5-slide .gallery-slide{
+    width: 32%;
+    border-radius: 10px;
+    background-color: var(--color-section3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: var(--boxshadow);
+    padding-bottom: 30px;
+
+}
+.section5 .section5-slide .gallery-slide .img{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section5 .section5-slide .slide1 .img{
+   background-image: url("images/HomePage/injection.jpg"); 
+}
+.section5 .section5-slide .slide2 .img{
+   background-image: url("images/HomePage/giving.jpg"); 
+}
+.section5 .section5-slide .slide3 .img{
+   background-image: url("images/HomePage/ed.jpg"); 
+}
+.section5 .section5-slide .gallery-slide .text{
+    font-size: 14px;
+    padding-top: 10px;
+}
 

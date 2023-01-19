@@ -282,7 +282,7 @@ nav .header-content2 {
     background-color: var(--color-section2);
 }
 .section2 .section2-display .section2-links .a3{
-    background-color: #dc5f00;
+    background-color: #031b5b;
 }
 .section2 .section2-vision{
     width: 50%;
@@ -309,3 +309,116 @@ nav .header-content2 {
     box-shadow: var(--boxshadow);
     
 }
+
+/* SECTION 3 STYLING */
+.section3{
+    position: relative;
+    width: 100%;
+    background-color: var(--color-section2);
+    padding-bottom: 30px;
+}
+.section3::before{
+    content: "";
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("images/ripped-header.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+.section3 .section3-gallery{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+.section3 .section3-gallery .gallery {
+    width: 32%;
+    border-radius: 10px;
+    background-color: var(--color-section3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: var(--boxshadow);
+    padding-bottom: 30px;
+}
+.section3 .section3-gallery .gallery .img{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section3 .section3-gallery .section3-gallery1 .img{
+    background-image: url("images/HomePage/medical-finance.png");
+}
+.section3 .section3-gallery .section3-gallery2 .img{
+    background-image: url("images/HomePage/volunteer.png");
+}
+.section3 .section3-gallery .section3-gallery3 .img{
+    background-image: url("images/HomePage/health-literacy.jpg");
+}
+.section3 .section3-gallery .gallery .text{
+    font-size: 14px;
+    padding-top: 10px;
+    
+}
+.section3 .section3-gallery .gallery .text h3{
+    font-weight: bold;
+}
+.section3 .section3-gallery .gallery .text a{
+    display: none;
+}
+.section3 .section3-gallery .gallery:hover a{
+    display: block;
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* SECTION 4 */
+.section4{
+    width: 100%;
+    background-color: var(--color-section3);
+}
+.section4 .section4-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    
+}
+.section4 .section4-container .left-side i{
+    font-size: 100px;
+}
+.section4 .section4-container .left-side:hover i{
+    color: #398c2b;
+}
+.section4 .section4-container .left-side a{
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* .section4 .section4-container .right-side{
+    border-bottom: none;
+} */
+

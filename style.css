@@ -1,16 +1,485 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --color-primary: black;
+:root {
+    --color-primary: #398c2b;
+    --color-section1-4: #ffffff;
+    --color-section2: #bbdc00;
+    --color-section3: #d0dce0;
+    --font-size1: 14px;
+    --font-size2: 13px;
+    --font-size3: 10px;
+    --boxshadow: 7px 11px 14px -6px rgba(0,0,0,0.36);
 }
 
-h1{
+/* HEADER SECTION */
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--font-size2);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-section2);
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    /* background-color: rgb(90, 79, 79); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background-image: url("images/ripped-header.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+}
+
+nav {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-logo {
+    width: 25%;
+
+}
+
+nav .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .header-content1 {
+    width: 45%;
+}
+
+nav .header-content2 {
+    width: 22%;
+
+}
+
+/* COLOURED NAV BUTTONS */
+.touch-btn {
+    padding: 1em;
+    color: white;
+    border-radius: 15px;
+    font-size: var(--font-size2);
+    font-weight: bold;
+}
+
+.health-btn {
+    background-color: var(--color-primary);
+}
+
+.health-btn:hover {
+    color: black;
+}
+
+.support-btn {
+    background-color: var(--color-section2);
+}
+
+.support-btn:hover {
+    background-color: var(--color-primary);
+    color: black;
+}
+
+
+
+/* DROPDOWN STYLING */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px #ddd;
+    z-index: 1;
+    font-size: var(--font-size3);
+    font-weight: bold;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: var(--color-section2);
+}
+
+/* STYLING ACTIVE BUTTON IN NAVBAR */
+/* Style the buttons */
+.nav-btn {}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.nav-btn:hover {
+    /* background-color: var(--color-section2); */
+    color: var(--color-section2);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* CAROUSEL STYLING */
+.carousel-inner .img-carousel{
+    animation: scaleUp 1.5s 0.5s ease-in-out;
+    transform: scale(1.1);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+    
+}
+@keyframes scaleUp {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.carousel .carousel-div{
+    position: relative;
+}
+.carousel .carousel-div .info-carousel{
+    background-color: rgba(17, 15, 15, 0.4);
+    width: 60%;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 30px; */
+    padding: 10px;
+    animation: carouselText 1s ease-in-out;
+    
+
+}
+@keyframes carouselText {
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.carousel .carousel-div .info-carousel h5{
+    font-size: 20px;
+}
+.carousel .carousel-div .info-carousel span{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel .carousel-div .info-carousel a{
+    width: 25%;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--color-primary);
+    color: var(--color-section1-4);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* SECTION 2 */
+
+.section2{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    
+}
+.section2 .section2-text{
+    padding-top: 20px;
+}
+.section2 .section2-text h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
     color: var(--color-primary);
 }
+.section2 .section2-text p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section2 .section2-display{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.section2 .section2-display .section2-links{
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.section2 .section2-display .section2-links a{
+    /* width: 50%; */
+    padding: 1.1em;
+    text-decoration: none;
+    color: var(--color-section1-4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section2 .section2-display .section2-links h1{
+    text-align: center;
+    color: var(--color-primary);
+}
+.section2 .section2-display .section2-links .a1{
+    background-color: var(--color-primary);
+}
+.section2 .section2-display .section2-links .a2{
+    background-color: var(--color-section2);
+}
+.section2 .section2-display .section2-links .a3{
+    background-color: #031b5b;
+}
+.section2 .section2-vision{
+    width: 50%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border-radius: 10px 0 15px 0;
+    background-color: var(--color-section3);
+    padding: 10px;
+    box-shadow: var(--boxshadow);
+    padding-bottom: 30px;
+    
+}
+.section2 .section2-vision h4{
+    text-align: center;
+    font-weight: bold;
+}
+.section2 .section2-vision a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    width: 20%;
+    background-color: #bbdc00;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+    
+}
+
+/* SECTION 3 STYLING */
+.section3{
+    position: relative;
+    width: 100%;
+    background-color: var(--color-section2);
+    padding-bottom: 30px;
+}
+.section3::before{
+    content: "";
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("images/ripped-header.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+.section3 .section3-gallery{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+.section3 .section3-gallery .gallery {
+    width: 32%;
+    border-radius: 10px;
+    background-color: var(--color-section3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: var(--boxshadow);
+    padding-bottom: 30px;
+}
+.section3 .section3-gallery .gallery .img{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section3 .section3-gallery .section3-gallery1 .img{
+    background-image: url("images/HomePage/medical-finance.png");
+}
+.section3 .section3-gallery .section3-gallery2 .img{
+    background-image: url("images/HomePage/volunteer.png");
+}
+.section3 .section3-gallery .section3-gallery3 .img{
+    background-image: url("images/HomePage/health-literacy.jpg");
+}
+.section3 .section3-gallery .gallery .text{
+    font-size: 14px;
+    padding-top: 10px;
+    
+}
+.section3 .section3-gallery .gallery .text h3{
+    font-weight: bold;
+}
+.section3 .section3-gallery .gallery .text a{
+    display: none;
+}
+.section3 .section3-gallery .gallery:hover a{
+    display: block;
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* SECTION 4 */
+.section4{
+    width: 100%;
+    background-color: var(--color-section3);
+    padding-bottom: 40px;
+}
+.section4 .section4-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    
+}
+.section4 .section4-container .left-side i{
+    font-size: 100px;
+}
+.section4 .section4-container .left-side:hover i{
+    color: #398c2b;
+}
+.section4 .section4-container .left-side a{
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* .section4 .section4-container .right-side{
+    border-bottom: none;
+} */
+
+/* SECTION 5 */
+.section5{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+}
+.section5 .section5-slide{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section5 .section5-slide .gallery-slide{
+    width: 32%;
+    border-radius: 10px;
+    background-color: var(--color-section3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: var(--boxshadow);
+    padding-bottom: 50px;
+
+}
+.section5 .section5-slide .gallery-slide .img{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section5 .section5-slide .slide1 .img{
+   background-image: url("images/HomePage/injection.jpg"); 
+}
+.section5 .section5-slide .slide2 .img{
+   background-image: url("images/HomePage/giving.jpg"); 
+}
+.section5 .section5-slide .slide3 .img{
+   background-image: url("images/HomePage/ed.jpg"); 
+}
+.section5 .section5-slide .gallery-slide .text{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.section5 .section5-slide .gallery-slide a{
+    display: none;
+}
+.section5 .section5-slide .gallery-slide:hover a{
+    display: block;
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: #031b5b;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
